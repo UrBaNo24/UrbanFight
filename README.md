@@ -1,179 +1,175 @@
-# URBAN FIGHT
-Proyecto final de grado 2022-2023
+Here's the text translated into English:
 
-## Índice
-1. [Project requirements](#project-requirements)
+# URBAN FIGHT
+Final project for the academic year 2022-2023
+
+## Table of Contents
+1. [Project Requirements](#project-requirements)
 2. [Technologies Used](#technologies-used)
 3. [Roadmap Game](#roadmap-game)
-4. [Data Base](#Data-base)
-5. [Explainer Video y Exposition](#explainer-video)
+4. [Database](#database)
+5. [Explainer Video and Presentation](#explainer-video)
 
-
-
-📄#Project requirements📄
+📄 **Project Requirements** 📄
 -----------------
 
-- [x] 💻**Desarrollo Web en Entorno Cliente**💻
-	- [x] Requisitos Básicos
- 		- [x] Separación del código en diferentes ficheros.
- 		- [x] Cualquier objeto .html, creado en tiempo de ejecución deberá estar integrado en el DOM.
- 		- [x] Almacenamiento local para controlar el acceso de diferentes usuarios al a aplicación web.
- 		- [x] Añadir algún tipo de interactividad al sitio web.
- 		- [x] Permitir un diseño asíncrono del sitio web y hacer peticiones a la BBDD en el servidor.
- 
-	- [x] Requisitos Adicionales
- 		- [x] Si en el sitio web existe la función de eliminar, mover, intercambiar, etc... objetos, hacer uso de una implementación 'drag and drop'.
- 		- [x] Modularización del código (import y export)
- 		- [x] Generar un comportamiento automatizado y aleatorio del uso de la aplicación web.
- 		- [x] Otra funcionalidad adicional.
+- [x] 💻 **Frontend** 💻
+	- [x] Basic Requirements
+		- [x] Code separation into different files.
+		- [x] Any dynamically created .html objects should be integrated into the DOM.
+		- [x] Local storage for controlling access by different users to the web application.
+		- [x] Adding some form of interactivity to the website.
+		- [x] Allowing asynchronous design of the website and making requests to the server's database.
 
-- [x] 🔌**Desarrollo Web en Entorno Servidor**🔌
-	- [x] Requisitos Básicos
- 		- [x] Modelo-Vista-Controlador.
- 		- [x] Utilizar la versión 8 del framework Laravel.
- 		- [x] Utilizar preferentemente Laravel UI con Boostrap como Starter Kit, aunque también podrá emplearse Laravel Breeze con Tailwind CSS.
- 		- [x] Almacenamiento local para controlar el acceso de diferentes usuarios a la aplicación web (usuarios visitantes, registrados y administradores).
- 		- [x] Correcto control de sesiones y protección de rutas a través de middlewares.
- 		- [x] Agrupación de rutas, plantillas, herencia de plantillas, componentes dinámicos, etc.
- 		- [x] Paginación
- 		- [x] Caracteristicas adicionales.
- 		- [x] Seguir estandares de estilo para PHP.
- 		- [x] Documentación del código y justificación de las decisiones tomadas.
- 		- [x] Utilizar MariaDB o MySQL
- 		- [x] Base de datos con mínimo 5 tablas.
- 		- [x] Una tabla mínimo para usuarios.
- 		- [x] Incluir esquema E/R en el proyecto (README).
- 		- [x] La base de datos debe ser creada mediante herramientas del framework (migraciones, seeders y factorías) y no directamente sobre PHPMyAdmin o desde la consola.
- 
-	- [ ] Requisitos Adicionales
- 		- [x] Uso de Breeze (con Tailwind CSS) o Jetstream (con Tailwind CSS o Bootstrap), además de aquellos aspectos del framework que completen los contenidos impartidos y amplíen la funcionalidad de la aplicación.
- 		- [x] Correcta utilización del lenguaje.
- 		- [ ] Utilización de componentes dinámicos basados en Vue.js y Axios.js para la comunicación asíncrona en background.
+	- [x] Additional Requirements
+		- [x] If the website has functions like deleting, moving, swapping, etc., objects, use 'drag and drop' implementation.
+		- [x] Code modularization (import and export).
+		- [x] Generate automated and random behavior for using the web application.
+		- [x] Additional functionality.
 
-- [x] 🚀**Despliegue de Aplicaciones Web**🚀
+- [x] 🔌 **Backend** 🔌
+	- [x] Basic Requirements
+		- [x] Model-View-Controller.
+		- [x] Use version 8 of the Laravel framework.
+		- [x] Preferably use Laravel UI with Bootstrap as the Starter Kit, but Laravel Breeze with Tailwind CSS can also be used.
+		- [x] Local storage to control access by different users to the web application (visitors, registered users, and administrators).
+		- [x] Proper session control and route protection through middlewares.
+		- [x] Grouping routes, templates, template inheritance, dynamic components, etc.
+		- [x] Pagination.
+		- [x] Additional features.
+		- [x] Follow PHP style standards.
+		- [x] Code documentation and justification of decisions made.
+		- [x] Use MariaDB or MySQL.
+		- [x] Database with a minimum of 5 tables.
+		- [x] A minimum of one table for users.
+		- [x] Include an E/R schema in the project (README).
+		- [x] The database must be created using framework tools (migrations, seeders, and factories) and not directly via PHPMyAdmin or the console.
 
-    - [x] Requisitos Básicos
- 		- [x] La aplicación web deberá ser accesible desde internet, es decir, no podrá estar desplegada en maquinas locales.
- 		
- 	- [x] Requisitos Adicionales	
- 	    - [x] Se valorá positivamente que el SGBD utilizado por la aplicación web este alojado en una maquina distinta a la máquina donde este desplegada la aplicación web.
- 		- [x] Baleanceador de carga.
- 
-- [x] 🌈**Diseño de Interfaces Web**🌈
-	- [x] Crear Prototipo en Figma
- 		- [x] Seleccionar color dominante.
- 		- [x] Crea una paleta de colores con el color dominante seleccionado. La paleta podrá ser monocromática, análoga o complementaria.
- 		- [x] Selecciona una fuente para el prototipo. Explica la elección de esa fuente.
- 		- [x] Crea una combinación armónica con otra fuente, aplicando diversos pesos en la jerarquía visual.
- 		- [x] Seleccionar dos colores para la fuente y background, calculando el contraste entre ellos según el estándar WCAG 2.
- 		- [x] Aplicar varios ejemplos en vuestra composición de “Equilibrio visual y tensión compositiva”. Explica la elección de esos elementos y qué significado aporta.
- 		- [x] El prototipo será diseñado para una resolución de 1920 x 1080, utilizando una rejilla de 12 columnas y para una resolución móvil 360 x 640.
- 
+	- [ ] Additional Requirements
+		- [x] Use of Breeze (with Tailwind CSS) or Jetstream (with Tailwind CSS or Bootstrap), in addition to other aspects of the framework that complement the content taught and expand the functionality of the application.
+		- [x] Proper language usage.
+		- [ ] Use dynamic components based on Vue.js and Axios.js for asynchronous background communication.
+
+- [x] 🚀 **Deployment** 🚀
+
+    - [x] Basic Requirements
+		- [x] The web application must be accessible from the internet, i.e., it cannot be deployed on local machines.
+
+	- [x] Additional Requirements	
+	    - [x] It is positively valued if the DBMS used by the web application is hosted on a different machine than the one where the web application is deployed.
+		- [x] Load balancer.
+
+- [x] 🌈 **Design** 🌈
+	- [x] Create a prototype in Figma.
+		- [x] Select a dominant color.
+		- [x] Create a color palette with the selected dominant color. The palette can be monochromatic, analogous, or complementary.
+		- [x] Select a font for the prototype and explain the font choice.
+		- [x] Create a harmonious combination with another font, applying different weights in visual hierarchy.
+		- [x] Select two colors for text and background, calculating the contrast between them according to the WCAG 2 standard.
+		- [x] Apply several examples in your "Visual Balance and Compositional Tension" composition. Explain the choice of these elements and the meaning they contribute.
+		- [x] The prototype will be designed for a resolution of 1920 x 1080, using a 12-column grid and for mobile resolution 360 x 640.
+
 	- [x] CSS3
- 		- [x] Utilizar CSS3 para dar formato a la interfaz, no se podrá utilizar ningún tipo de Framework tipo Bootstrap, Materialize, UIKit...
- 		- [x] El diseño de la interfaz deberá ser “Responsive” utilizando Media Queries, FlexBox y Grid layout.
- 		- [x] Utilizar el preprocesador SASS para estructurar los archivos css en un único main.css (main.scss ) con @import a los demás scss (colores, cabecera, pie, cuerpo…).
- 		- [x] Utilizar la metodología BEM para la descripción de los selectores, variables...
+		- [x] Use CSS3 to style the interface; no Frameworks like Bootstrap, Materialize, UIKit, etc., are allowed.
+		- [x] The interface design should be "Responsive" using Media Queries, FlexBox, and Grid layout.
+		- [x] Use the SASS preprocessor to structure CSS files into a single main.css (main.scss) with @import for other scss files (colors, header, footer, body...).
+		- [x] Use the BEM methodology for selector description, variables, etc.
  	
  	- [x] HTML
- 		- [x] Insertar un elemento multimedia de cada tipo: video, sonido, canvas y SVG.
- 		- [x] Se podrán utilizar las librerias Chartjs, D3.js, koolChart, Snap.svg o cualquier para incluir gráficas, animaciones, galería de imágenes para canvas o SVG.
- 	
-	- [x] Utilizar un software tipo inkscape para crear el logo vectorial al cual se le podrá aplicar alguna animación con Snap.svg o anime.js para cubrir el punto anterior.
+ 		- [x] Insert one multimedia element of each type: video, sound, canvas, and SVG.
+ 		- [x] Libraries like Chartjs, D3.js, koolChart, Snap.svg, or any other can be used to include charts, animations, image galleries for canvas or SVG.
+ 
+	- [x] Use vector graphics software like Inkscape to create a vector logo that can be animated with Snap.svg or anime.js to fulfill the previous point.
 
-- [X] 🇺🇸 **Hora Libre Configuración (Ingles)** 🇺🇸
-	- [x] Traducir las diferentes interfaces del sitio, permitiendo que el usuario cambie entre idiomas. Los idiomas mínimos contemplados serán: español e inglés. El alumn@ podrá añadir tantos como se desee. No se puede hacer uso de las herramientas de traducción de Google, Chrome, etc...
-	- [x] Comentar, documentar y explicar el código en inglés.
-	- [ ] Realizar la exposición en inglés. Si el alumn@ se cansa, siempre podrá expresarse en español, con la idea de volver a expresarse en inglés nada más tenga la oportunidad.
- 		
- 📚#Technologies Used
+ 
+ 📚 **Technologies Used** 📚
 -----------------
- | **Fronted** | **Backend** | **Others** |
+ | **Frontend** | **Backend** | **Others** |
  |-------------|-------------|-------------|
- | JQuery      | PHP          | AWS        |
- | SASS        | MySQL        | GIT        |
- | Kaboom      | Laravel      | Photoshop  |
- | JS          |              | Otros      |
+ | JQuery      | PHP         | AWS        |
+ | SASS        | MySQL       | GIT        |
+ | Kaboom      | Laravel     | Photoshop  |
+ | JS          |             | Others     |
  
-<h2 align="center">📈📝Roadmap Game</h2>
+<h2 align="center">📈📝 Roadmap Game</h2>
 
-- [x] Versión 1.0
-  - [x] Crear base de datos.
-  - [x] Crear interfaz básica.
+- [x] Version 1.0
+  - [x] Create a database.
+  - [x] Create a basic interface.
 
-- [x] Versión 2.0 
-  - [x] Estructurar desarrollo del juego.
-  - [x] Generar ViewPort.
-  - [x] Diseñar Personaje principal.
-  - [x] Diseñar mapa principal.
-  - [x] Cargar Elementos audivisuales.
-  - [x] Crear Elementos en juego.
-  - [x] Desarrollar animaciones.
-  - [x] Establecer animación de correr.
-  - [x] Establecer animación de salto.
-  - [x] Establecer animación de muerte.
-  - [x] Establecer animación de ataque.
-  - [x] Establecer animación de personaje quieto.
-  - [x] Desarrollar interfaz de juego.
-  - [x] Generar movimientos básicos.
-  - [x] Establecer gravedad y suelo.
-  - [x] Establecer barras de vida.
-  - [x] Establecer contador.  
+- [x] Version 2.0 
+  - [x] Structure game development.
+  - [x] Generate ViewPort.
+  - [x] Design the main character.
+  - [x] Design the main map.
+  - [x] Load audiovisual elements.
+  - [x] Create in-game elements.
+  - [x] Develop animations.
+  - [x] Implement running animation.
+  - [x] Implement jump animation.
+  - [x] Implement death animation.
+  - [x] Implement attack animation.
+  - [x] Implement idle character animation.
+  - [x] Develop game interface.
+  - [x] Implement basic movements.
+  - [x] Implement gravity and ground.
+  - [x] Implement health bars.
+  - [x] Implement counters.
 
-- [x] Versión 3.0
-  - [x] Establecer hitbox.
-  - [x] Detectar colisiones y golpes.
-  - [x] Animar barra de vida.
-  - [x] Declarar ganador.
-  - [x] Desarrollar salto.
-  - [x] Detectar cuando el personaje esta en el suelo.
-  - [x] Establecer reseteo de salto.
-  - [x] Voltear animacion al correr.
-  - [x] Correguir Hitbox.
-  - [x] Establecer empate.
-  - [x] Desabilitar ataque en ciertos puntos del gameplay.
-  - [x] Controlar la presión de muchas teclas a la vez.
+- [x] Version 3.0
+  - [x] Implement hitbox.
+  - [x] Detect collisions and hits.
+  - [x] Animate health bar.
+  - [x] Declare a winner.
+  - [x] Implement jump mechanics.
+  - [x] Detect when the character is on the ground.
+  - [x] Implement jump reset.
+  - [x] Flip animation when running.
+  - [x] Correct hitbox.
+  - [x] Implement a tie game.
+  - [x] Disable attack at certain points in gameplay.
+  - [x] Manage simultaneous key presses efficiently.
 
-- [x] Versión 4.0
-  - [x] Desarrollar 5 personajes en total.
-  - [x] Crear selector de personajes básico.
-  - [x] Generar estadisticas adicionales a los personajes.
-  - [x] Sincronizar estadísticas con la base de datos.
-  - [x] Sincronizar mapa con la base de datos
-  - [x] Sincronizar Sprites con la base de datos.
-  - [x] Establecer cantidad de sprite a cada personaje de manera automática.
-  - [x] Funcionalidad de un mando con el juego.
-  - [x] Añadir un alcance de ataque al personaje.
-  - [x] Añadir escala para tamaño del personaje.
-  - [x] Añadir sonidos al ataque.
-  - [x] Añadir sonidos al salto.
-  - [x] Añadir musica de juego de forma aleatoria.
- 
- - [x] Versión 5.0
-    - [x] Arreglar bug declaración de ganador.
-    - [x] Arreglar bug cambiar dirección jugador en el aire.
-    - [x] Arreglar bug finalización de partida con contador.
-    - [x] Parar movimiento cuando se termine el contador.
-    - [x] Arreglar bug a la hora de hacer animación de muerte.
-    - [x] Posibilidad de cambiar estadisticas sincronizadas con la base de datos.
-    - [x] Ver hitbox en modo admin.
-    - [x] Arreglar bug al correr con el mando.
+- [x] Version 4.0
+  - [x] Develop a total of 5 characters.
+  - [x] Create a basic character selector.
+  - [x] Generate additional statistics for the characters.
+  - [x] Synchronize statistics with the database.
+  - [x] Synchronize the map with the database.
+  - [x] Synchronize sprites with the database.
+  - [x] Automatically set the number of sprites for each character.
+  - [x] Implement gamepad functionality.
+  - [x] Add an attack range for characters.
+  - [x] Add scaling for character size.
+  - [x] Add attack sounds.
+  - [x] Add jump sounds.
+  - [x] Add random in-game music.
 
- - [x] Versión 6.0
-    - [x] Generar avatares para los personajes
-    - [x] Mejorar visualmente selector de personajes.
-    - [x] Mostrar estadísticas en el selector de personajes.
-    - [x] Posibilidad de resetear selección.
-    - [x] Botón para volver a jugar partida.
-    - [x] Botón para salir de la partida.
- 
-   <h2 align="center">Data Base</h2>
-   ![image](https://github.com/aUrbano24/ProyectoFinal-22-23-UrbanFight/assets/91953243/b2c135cb-104c-4691-9890-9c02190693f8)
+- [x] Version 5.0
+  - [x] Fix bug in declaring a winner.
+  - [x] Fix bug in changing the player's direction mid-air.
+  - [x] Fix bug in game ending with a counter.
+  - [x] Stop movement when the counter ends.
+  - [x] Fix bug in death animation.
+  - [x] Allow resetting synchronized statistics.
+  - [x] View hitboxes in admin mode.
+  - [x] Fix bug while running with the gamepad.
 
-  <h2 align="center">Explainer Video</h2>
+- [x] Version 6.0
+  - [x] Create avatars for the characters.
+  - [x] Improve the visual character selector.
+  - [x] Display statistics in the character selector.
+  - [x] Implement the option to reset the selection.
+  - [x] Add buttons to replay the game.
+  - [x] Add a button to exit the game.
 
-Video Demostrativo explicando la mayoria de las funciones de la web.
-https://youtu.be/hjQDniRGRbo
+<h2 align="center">Database</h2>
+![image](https://github.com/aUrbano24/ProyectoFinal-22-23-UrbanFight/assets/91953243/b2c135cb-104c-4691-9890-9c02190693f8)
 
-Exposición:
-https://drive.google.com/file/d/1WWuOjxI8q9eLND5EZu1waRgMsbWRexvz/view?usp=sharing
+<h2 align="center">Explainer Video</h2>
+
+Demonstrative video explaining most of the web functions.
+[Watch on YouTube](https://youtu.be/hjQDniRGRbo)
+
+Presentation:
+[Google Drive Presentation](https://drive.google.com/file/d/1WWuOjxI8q9eLND5EZu1waRgMsbWRexvz/view?usp=sharing)
