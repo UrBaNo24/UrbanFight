@@ -1,5 +1,3 @@
-Here's the text translated into English:
-
 # URBAN FIGHT
 Final project for the academic year 2022-2023
 
