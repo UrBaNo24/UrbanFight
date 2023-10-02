@@ -1,5 +1,5 @@
 # URBAN FIGHT
-Final project for the academic year 2022-2023
+<span style="color:red;">IMPORTANT!!! The objective of this project is not to showcase a beautiful and visual aesthetic, but simply to demonstrate my abilities with Laravel and JavaScript.</span>
 
 ## Table of Contents
 1. [Project Requirements](#project-requirements)
