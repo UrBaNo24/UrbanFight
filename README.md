@@ -165,7 +165,7 @@ Final project for the academic year 2022-2023
 
 <h2 align="center">Database</h2>
 
-![Database Screenshot](https://github.com/aUrbano24/ProyectoFinal-22-23-UrbanFight/base de datos.png)
+![Database Screenshot]([https://github.com/aUrbano24/ProyectoFinal-22-23-UrbanFight/base de datos.png](https://github.com/UrBaNo24/UrbanFight/blob/main/image_database.png))
 
 
 
