@@ -164,7 +164,9 @@ Final project for the academic year 2022-2023
   - [x] Add a button to exit the game.
 
 <h2 align="center">Database</h2>
-<img src="https://github.com/aUrbano24/ProyectoFinal-22-23-UrbanFight/raw/main/assets/91953243/b2c135cb-104c-4691-9890-9c02190693f8" alt="Database Screenshot">
+
+![Database Screenshot](https://github.com/aUrbano24/ProyectoFinal-22-23-UrbanFight/raw/main/assets/91953243/b2c135cb-104c-4691-9890-9c02190693f8)
+
 
 
 <h2 align="center">Explainer Video</h2>
